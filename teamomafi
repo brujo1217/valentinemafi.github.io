@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Quieres ser mi Valentine?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #respuesta-si {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    #respuesta-no {
+      background-color: #f44336;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    #respuesta-no:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    #conejo-img {
+      display: none;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Quieres ser mi Valentine?</h1>
+  <button id="respuesta-si" onclick="mostrarConejitos()">Sí</button>
+  <button id="respuesta-no" disabled>No</button>
+  <img src="https://media.giphy.com/media/l4FGpNjU8ZUukUaNO/giphy.gif" alt="Conejitos besándose" id="conejo-img">
+  <script>
+    function mostrarConejitos() {
+      document.getElementById("conejo-img").style.display = "inline-block";
+    }
+  </script>
+</body>
+</html>
